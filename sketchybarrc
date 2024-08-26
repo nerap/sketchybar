@@ -181,6 +181,7 @@ sketchybar --add event spotify_change $SPOTIFY_EVENT \
     --subscribe spotify mouse.entered mouse.exited \
     mouse.exited.global
 
+
 spotify_label=(
   label="Spotify"
   label.padding_left=6
@@ -315,6 +316,5 @@ sketchybar --add bracket utilis ram cpu q \
 
 sketchybar --add bracket control apple "${spacesArray[@]!}" center \
   --set control "${brackets[@]!}"
-
 
 sketchybar --update
