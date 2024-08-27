@@ -304,7 +304,7 @@ current_space=(
   background.height=25
   background.corner_radius=10
   background.border_color="$PURPLE"
-  background.border_width=3
+  background.border_width=2
   background.padding_left=10
   click_script="$PLUGIN_DIR/sort.sh"
 )
@@ -315,10 +315,10 @@ sketchybar --add item current_space left \
 brackets=(
   padding_left=10
   background.color="$STATUS"
-  background.height=25
+  background.height=23
   background.corner_radius=10
   background.border_color="$PURPLE"
-  background.border_width=3
+  background.border_width=2
 )
 
 sketchybar --add bracket status time date wifi battery volume_icon right \
