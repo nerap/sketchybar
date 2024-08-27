@@ -158,6 +158,15 @@ sketchybar --add item volume_icon right \
 #sketchybar --add item weather right \
 #  --set weather "${weather[@]!}"
 
+pad=(
+  width=6
+  background.color="$TRANSPARENT"
+)
+
+sketchybar --add item pad e \
+    --set pad "${pad[@]!}" \
+
+
 spotify=(
   click_script="$POPUP_CLICK_SCRIPT"
   popup.horizontal=on
@@ -197,6 +206,14 @@ spotify_label=(
 sketchybar --add item spotify_label e \
   --set spotify_label "${spotify_label[@]!}"
 
+padr=(
+  width=6
+  background.color="$TRANSPARENT"
+)
+
+sketchybar --add item padr q \
+    --set padr "${pad[@]!}" \
+
 ram=(
   icon="$RAM"
   icon.padding_left=15
@@ -212,7 +229,7 @@ ram=(
   background.border_color="$PURPLE"
 )
 
-sketchybar --add item ram q \
+sketchybar --add item ram  q \
   --set ram "${ram[@]!}"
 
 cpu=(
@@ -296,6 +313,7 @@ sketchybar --add item current_space left \
   --set current_space "${current_space[@]!}"
 
 brackets=(
+  padding_left=10
   background.color="$STATUS"
   background.height=25
   background.corner_radius=10
@@ -307,14 +325,13 @@ sketchybar --add bracket status time date wifi battery volume_icon right \
   --set status "${brackets[@]!}"
 
 sketchybar --add bracket music spotify spotify_label e \
-   --set music "${brackets[@]!}" \
-   background.padding_right=50
+   --set music "${brackets[@]!}" padding_left=30
 
 sketchybar --add bracket utilis ram cpu q \
   --set utilis "${brackets[@]!}" \
-  background.padding_left=50
 
 sketchybar --add bracket control apple "${spacesArray[@]!}" center \
   --set control "${brackets[@]!}"
+
 
 sketchybar --update
