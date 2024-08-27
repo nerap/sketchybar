@@ -264,13 +264,13 @@ for i in "${!SPACE_GHOSTS[@]}"; do
   if [[ $sid -eq $ACTIVE_SPACE ]]; then
     CURRENT_ICON=$PACMAN
   else
-    CURRENT_ICON=${SPACE_GHOSTS["$i"]}
+    CURRENT_ICON=$sid
   fi
 
   spacesArray+=("space.$sid")
 
   sketchybar --add space space.$sid left \
-    --set space.$sid associated_space=$sid \
+    --set space.$sid associated_space=$sid\
     icon="$CURRENT_ICON" \
     click_script="yabai -m space --focus $sid" \
     "${space[@]}"
