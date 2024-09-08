@@ -69,7 +69,7 @@ sketchybar --add item time right \
 date=(
   update_freq=30
   script="$PLUGIN_DIR/date.sh"
-  click_script="$POPUP_CLICK_SCRIPT"
+  #click_script="$POPUP_CLICK_SCRIPT"
   label.padding_left=15
   background.color="$TEMPUS"
   background.height=19
@@ -82,7 +82,7 @@ sketchybar --add item date right \
 
 wifi=(
   script="$PLUGIN_DIR/wifi.sh"
-  click_script="$POPUP_CLICK_SCRIPT"
+  #click_script="$POPUP_CLICK_SCRIPT"
   label.padding_right=15
   update_freq=60
 )
@@ -96,7 +96,7 @@ battery=(
   script="$PLUGIN_DIR/battery.sh"
   update_freq=120
   updates=on
-  click_script="$POPUP_CLICK_SCRIPT"
+  #click_script="$POPUP_CLICK_SCRIPT"
   label.padding_left=15
 )
 
