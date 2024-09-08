@@ -168,7 +168,7 @@ sketchybar --add item pad e \
 
 
 spotify=(
-  click_script="$POPUP_CLICK_SCRIPT"
+  #click_script="$POPUP_CLICK_SCRIPT"
   popup.horizontal=on
   popup.align=center
   popup.height=100
